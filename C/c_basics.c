@@ -10,10 +10,10 @@ C언어 핵심 기본 문법 요약 (C Language Basics Summary)
 // ---
 // 5. 함수 (Functions)
 // ---
-// 함수는 특정 작업을 수행하는 코드 블록입니다.
+// 함수는 특정 작업을 수행하는 코드 블록.
 // C에서는 함수가 반환할 값의 자료형(예: int)과
-// 받을 매개변수(parameter)의 자료형을 명시해야 합니다.
-// (main 함수보다 먼저 정의하거나, main 함수 위에 '프로토타입'을 선언해야 합니다.)
+// 받을 매개변수(parameter)의 자료형을 명시해야 한다.
+// (main 함수보다 먼저 정의하거나, main 함수 위에 '프로토타입'을 선언해야 한다.)
 
 // 'add' 함수 정의
 // 반환형: int, 매개변수: int a, int b
@@ -29,15 +29,15 @@ int main(void) {
     // ---
     // 1. 변수와 자료형 (Variables & Data Types)
     // ---
-    // 변수를 사용하기 전에 반드시 자료형을 선언해야 합니다.
-    // 모든 문장(statement)은 세미콜론(;)으로 끝나야 합니다.
+    // 변수를 사용하기 전에 반드시 자료형을 선언해야 한다.
+    // 모든 문장(statement)은 세미콜론(;)으로 끝나야 한다.
     
     int age = 25;           // 정수 (integer)
     float height = 175.5f;  // 실수 (float), 숫자 뒤에 f를 붙이기도 함
     double pi = 3.141592;   // float보다 정밀한 실수 (double)
     char initial = 'K';     // 문자 하나 (character), 작은따옴표 사용
 
-    // printf로 변수 출력. \n은 줄바꿈 문자입니다.
+    // printf로 변수 출력. \n은 줄바꿈 문자.
     printf("--- 1. 변수와 자료형 ---\n");
     printf("나이 (int): %d\n", age);
     printf("키 (float): %f\n", height);    // %f는 float 출력
@@ -59,7 +59,6 @@ int main(void) {
     // printf("입력한 정수: %d\n", input_num);
     
     // 주석 처리된 이유: 자동화된 실행 시 입력 대기 상태에 빠질 수 있으므로,
-    // 필요시 주석을 풀고 직접 컴파일하여 테스트하세요.
     printf("(scanf 테스트는 주석 처리됨)\n");
 
 
@@ -87,7 +86,7 @@ int main(void) {
     // ---
     // 4. 제어문 (Control Flow)
     // ---
-    // 코드 블록(범위)을 중괄호 {}로 구분합니다.
+    // 코드 블록(범위)을 중괄호 {}로 구분.
 
     // 4-1. if / else if / else
     printf("\n--- 4-1. if문 ---\n");
@@ -107,7 +106,7 @@ int main(void) {
     switch (choice) {
         case 1:
             printf("메뉴 1 선택\n");
-            break; // 'break'가 없으면 다음 case가 연달아 실행됩니다.
+            break; // 'break'가 없으면 다음 case가 연달아 실행.
         case 2:
             printf("메뉴 2 선택\n");
             break;
@@ -137,7 +136,7 @@ int main(void) {
     // 5. 함수 (Functions) - 호출
     // ---
     printf("\n--- 5. 함수 호출 ---\n");
-    // 'main' 함수 위쪽에 정의된 add 함수를 호출합니다.
+    // 'main' 함수 위쪽에 정의된 add 함수를 호출.
     int sum_result = add(5, 3);
     printf("add(5, 3)의 결과: %d\n", sum_result);
 
@@ -146,7 +145,7 @@ int main(void) {
     // 6. 배열 (Arrays)
     // ---
     // 같은 자료형의 데이터를 연속된 공간에 저장하는 구조.
-    // C언어 배열은 크기가 고정됩니다.
+    // C언어 배열은 크기가 고정.
     printf("\n--- 6. 배열 ---\n");
     
     // 3칸짜리 정수형 배열을 선언하고 초기화
@@ -168,7 +167,7 @@ int main(void) {
     // ---
     // 7. 포인터 (Pointers)
     // ---
-    // C언어의 핵심. 메모리 '주소'를 저장하는 변수입니다.
+    // C언어의 핵심. 메모리 '주소'를 저장하는 변수.
     printf("\n--- 7. 포인터 ---\n");
     
     int num = 10;
@@ -187,12 +186,12 @@ int main(void) {
     // ---
     // 8. 주석 (Comments)
     // ---
-    // 이것은 한 줄 주석입니다.
+    // 이것은 한 줄 주석.
     
     /*
-    이것은
+    이건
     여러 줄에 걸친
-    주석입니다.
+    주석.
     */
 
 
